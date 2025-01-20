@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "configurePresets": [
+      {
+        "name": "dynamic",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/output-dynamic",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "/Users/I758010/vcpkg/scripts/buildsystems/vcpkg.cmake",
+          "VCPKG_TARGET_TRIPLET": "arm64-osx-dynamic",
+          "VCPKG_INSTALL_OPTIONS": "--debug;--allow-unsupported"
+        }
+      },
+      {
+        "name": "static",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/output-static",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "/Users/I758010/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        }
+      }
+    ]
+  }

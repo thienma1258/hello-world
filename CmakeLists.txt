@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(HelloWorld )
+
+include_directories(include)
+
+file(GLOB SOURCES "src/*.cpp")
+
+find_package(fmt CONFIG REQUIRED)
+
+# static link
+# add_library(fmt_lib SHARED IMPORTED)
+# SET_TARGET_PROPERTIES(fmt_lib PROPERTIES IMPORTED_LOCATION /Users/I758010/internal/hello/output-dynamic/vcpkg_installed/arm64-osx/lib/libfmt.a)
+
+add_executable(HelloWorld ${SOURCES})
+
+# static link
+target_link_libraries(HelloWorld PRIVATE fmt::fmt)
