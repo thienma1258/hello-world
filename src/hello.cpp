@@ -1,6 +1,13 @@
 #include <fmt/core.h>
-#define RED     "\033[31m"      /* Red */
+#include "hello.h"
+#include <string>
 
-void hello(){
+using namespace std;
+
+#define RED "\033[31m"    /* Red */
+#define BLUE "\033[34m"   /* Blue */
+
+void hello()
+{
     fmt::print(RED "Hello everyone this is Dong Pham!\n");
 }

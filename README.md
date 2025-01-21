@@ -45,8 +45,6 @@ The POSIX threads library, which allows multiple tasks to run concurrently withi
 
 # cmake
 
-- CMake is the de-facto standard for building C++ code, with over 2 million downloads a month. It’s a powerful, comprehensive solution for managing the software build process.
-
 - CMake uses a toolchain of utilities to compile, link libraries and create archives, and other tasks to drive the build. The toolchain utilities available are determined by the languages enabled. In normal builds, CMake automatically determines the toolchain for host builds based on system introspection and defaults. In cross-compiling scenarios, a toolchain file may be specified with information about compiler and utility paths.
 
 # DEMO
@@ -99,6 +97,6 @@ make run
 ## Release
 
 ### github
-
-
+https://github.com/thienma1258/hello-world/releases/tag/0.1.0
 ### vcpkg
+
