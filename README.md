@@ -1,20 +1,5 @@
 # Hello program
-This is a basic program for learning how to build and release
-
-![example](./image1.png)
-
-
-A compiler converts a C++ program into an executable. There are four phases for a C program to become an executable: 
-
-- Pre-processing
-- Compilation
-- Assembly
-- Linking
-
-
-# CMake: A Powerful Software Build System
-
-CMake is the de-facto standard for building C++ code, with over 2 million downloads a month. It’s a powerful, comprehensive solution for managing the software build process. Get everything you need to successfully leverage CMake by visiting our resources section.
+This is a demo program for learning how to build and release
 
 # Package Manager
 
@@ -22,30 +7,13 @@ CMake is the de-facto standard for building C++ code, with over 2 million downlo
 
 https://vcpkg.io
 
-# Runtime Manager
-
-C++ runtime enviroment : libcmt is (one of several) implementations of the C standard library provided with Microsoft's compiler. The runtime library is basically a collection of the implementations of those functions in one big file (or a few big files--e.g., on UNIX the floating point functions are traditionally stored separately from the rest).
-
-- `libc++` 
-The standard C++ library. This library contains the functions used by C++ programmers on all platforms.
-
- /usr/lib/libSystem.dylib
-
-- `libinfo` 
-The NetInfo library.
-
-- `libkvm`
-The kernel virtual memory library.
-
-- `libm`
-The math library, which contains arithmetic functions.
-
-- `libpthread`
-The POSIX threads library, which allows multiple tasks to run concurrently within a single program.
-
-# cmake
+# CMake: A Powerful Software Build System
 
 - CMake uses a toolchain of utilities to compile, link libraries and create archives, and other tasks to drive the build. The toolchain utilities available are determined by the languages enabled. In normal builds, CMake automatically determines the toolchain for host builds based on system introspection and defaults. In cross-compiling scenarios, a toolchain file may be specified with information about compiler and utility paths.
+
+- CMake is a tool to manage building of source code. Originally, CMake was designed as a generator for various dialects of Makefile, today CMake generates modern buildsystems such as Ninja as well as project files for IDEs such as Visual Studio and Xcode.
+- CMake is widely used for the C and C++ languages, but it may be used to build source code of other languages too.
+
 
 # DEMO
 
@@ -54,7 +22,6 @@ The POSIX threads library, which allows multiple tasks to run concurrently withi
 - vcpkg
 - clang
 - cmake
-- xcode
 - ...
 
 ## Present 
@@ -99,4 +66,28 @@ make run
 ### github
 https://github.com/thienma1258/hello-world/releases/tag/0.1.0
 ### vcpkg
+
+
+# Addition
+
+
+In Darwin, much is built into the system library, /usr/lib/libSystem.dyli,/usr/lib/libc++.1.dylib
+
+- `libc` 
+The standard C library. This library contains the functions used by C programmers on all platforms.The runtime library is basically a collection of the implementations of those functions in one big file (or a few big files--e.g., on UNIX the floating point functions are traditionally stored separately from the rest).
+
+- `libinfo` 
+The NetInfo library.
+
+- `libkvm`
+The kernel virtual memory library.
+
+- `libm`
+The math library, which contains arithmetic functions.
+
+- `libpthread`
+The POSIX threads library, which allows multiple tasks to run concurrently within a single program.
+
+- `libc++1.dylib` 
+The standard C++ library.
 

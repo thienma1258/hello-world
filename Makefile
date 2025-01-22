@@ -12,7 +12,7 @@ conf:
 	$(CMAKe) . --preset=$(PRESENT)
 
 build: 
-	$(CMAKe) --build output-$(PRESENT)
+	$(CMAKe) --build output-$(PRESENT) -v
 
 # static-link: 
 # 	$(LD1) -o ./output/hello-static ./output/hello.o
